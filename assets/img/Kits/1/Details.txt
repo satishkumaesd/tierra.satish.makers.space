@@ -1,0 +1,19 @@
+Sensor Based Robot Kit:
+BO Motors
+Wheels
+Chassis
+Arduino Uno
+Motor Shield
+L298N
+IR Sensors
+Ultrasonic Sensor
+TSOP1738
+Servo Motor
+Bluetooth Module
+Remote
+Battery Case
+Connectors
+Data Cable
+Sensor Mounts
+Screws & Nuts
+Spacers

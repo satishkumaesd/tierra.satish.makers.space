@@ -1,0 +1,65 @@
+.vision {
+  background-image: url("../img/about/vision-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.vision__item {
+  overflow: hidden;
+  height: 660px;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    .vision__item__text {
+      bottom: 50px;
+      a,p {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.vision__item__text {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  width: 100%;
+  padding: 0 50px;
+  @include transition( all 0.3s);
+
+  h4 {
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $white-color;
+    margin-bottom: 28px;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.1s);
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 700;
+    color: $white-color;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.2s);
+
+    span {
+      font-size: 30px;
+      color: #5F67FF;
+      position: relative;
+      top: 10px;
+    }
+  }
+}
