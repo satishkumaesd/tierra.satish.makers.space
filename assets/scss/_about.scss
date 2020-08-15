@@ -1,0 +1,203 @@
+.about-area{
+    // left content
+    .about-caption{
+        @media #{$xs}{
+            margin-bottom: 35px;
+        }
+         p{
+            font-size: 16px;
+            color: #64676c;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            padding-right: 50px;
+            @media #{$lg}{
+                padding-right: 20px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+        ul{
+            margin-bottom: 75px;
+            @media #{$xs}{
+                margin-bottom: 50px;
+            }
+            @media #{$sm}{
+                margin-bottom: 50px;
+            }
+            li{
+                color: #000;
+                font-size: 16px;
+                span{
+                    color: #2d3092;
+                    font-size: 30px;
+                    position: relative;
+                    top: 4px;
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+    // Right img
+    .about-img{
+        position: relative;
+        .about-font-img{
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            & img{
+                @media #{$xs}{
+                    width: 100%;
+                }
+            }
+        }
+        
+        .about-back-img{
+            position: absolute;
+            top: 60px;
+            right: -180px;
+            z-index: 1;
+            @media #{$lg}{
+                right: -10px;
+            }
+            & img{
+                @media #{$xs}{
+                    width: 90%;
+                }
+            }
+            @media #{$md}{
+                position: unset;
+            }
+            @media #{$sm}{
+                position: unset;
+            }
+            @media #{$xs}{
+                position: unset;
+            }
+        }
+    }
+}
+
+
+//About Details page
+.about-details{
+	.about-details-cap{
+		h4{
+			font-size: 30px;
+			font-family: $font_1;
+			font-weight: 700;
+			margin-bottom:30px;
+			color:#000a2d;
+			display: inline-block;
+		}
+		p{
+			color: #464d65;
+			font-size: 16px;
+		}
+	}
+  }
+  
+//vision
+/*---------------------
+  About
+-----------------------*/
+.about__text {
+  padding-top: 25px;
+
+  .section-title {
+    text-align: left;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 27px;
+    }
+  }
+
+  span {
+    font-size: 17px;
+    color: $heading-color;
+    display: block;
+    margin-bottom: 36px;
+  }
+}
+
+.about__pic {
+
+  img {
+    min-width: 100%;
+  }
+}
+/*---------------------
+  Vision
+-----------------------*/
+.vision {
+  background-image: url("../img/about/vision-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.vision__item {
+  overflow: hidden;
+  height: 660px;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    .vision__item__text {
+      bottom: 50px;
+      a,p {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.vision__item__text {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  width: 100%;
+  padding: 0 50px;
+  @include transition( all 0.3s);
+
+  h4 {
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $white-color;
+    margin-bottom: 28px;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.1s);
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 700;
+    color: $white-color;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    @include transition( all 0.3s ease 0.2s);
+
+    span {
+      font-size: 30px;
+      color: #5F67FF;
+      position: relative;
+      top: 10px;
+    }
+  }
+}
